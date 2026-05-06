@@ -1,5 +1,7 @@
 # 🛡️ Face-Attendance System
 
+[![Live Demo](https://img.shields.io/badge/demo-live%20view-blue?style=for-the-badge&logo=vercel)](https://face-attendance-dusky.vercel.app/)
+
 An advanced Face Recognition based Attendance Management System built with React, Vite, and Supabase. This system provides a seamless way for Administrators, HODs, and Tutors to manage student attendance using AI-powered face detection.
 
 ## 🚀 Live Demo Credentials
