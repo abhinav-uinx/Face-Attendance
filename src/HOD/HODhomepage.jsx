@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./hodhomepage.module.css";
 import supabase from "../utils/supabase";
-import HODNavbar from "./components/navbar/HodNavbar";
+import HODNavbar from "./components/navbar/HODNavbar";
 import HODRouter from "../Router/HODRouter";
 
 const HODhomepage = () => {
