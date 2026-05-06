@@ -1,0 +1,94 @@
+.color {
+  color: #f5f5f7;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(280px, 420px) minmax(280px, 1fr);
+}
+
+.container,
+.yearList {
+  background: rgba(15, 16, 18, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+}
+
+.title,
+.yearList h3 {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.15;
+  margin: 0 0 18px;
+}
+
+.form {
+  display: grid;
+  gap: 18px;
+}
+
+.container :global(.MuiInputBase-root),
+.container :global(.MuiInputBase-input),
+.container :global(.MuiFormLabel-root),
+.container :global(.MuiInputLabel-root) {
+  color: rgba(245, 245, 247, 0.82) !important;
+}
+
+.container :global(.MuiInput-underline:before) {
+  border-bottom-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+.container :global(.MuiInput-underline:hover:not(.Mui-disabled):before),
+.container :global(.MuiInput-underline:after) {
+  border-bottom-color: rgba(245, 245, 247, 0.68) !important;
+}
+
+.submitButton {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 999px !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  min-height: 40px;
+  text-transform: none !important;
+  transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease !important;
+}
+
+.submitButton:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+  transform: translateY(-1px);
+}
+
+.yearList ul {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.yearList li {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 13px 14px;
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.yearList li:hover {
+  background: rgba(255, 255, 255, 0.085);
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+.yearList li strong {
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .color {
+    grid-template-columns: 1fr;
+  }
+}

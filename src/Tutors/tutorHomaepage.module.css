@@ -1,0 +1,14 @@
+.container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 28px auto;
+  padding: 28px;
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+}
+.studentTable { margin-top: 18px; }
+.studentPhoto { width: 74px; height: 86px; object-fit: cover; border-radius: 8px; border: 2px solid rgba(226, 232, 240, 0.18); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.32); transition: transform 180ms ease, box-shadow 180ms ease; }
+.studentPhoto:hover { transform: scale(1.05); box-shadow: 0 16px 34px rgba(34, 211, 238, 0.22); }
+.viewButton { padding: 10px 14px; background: linear-gradient(135deg, #0891b2, #7c3aed); color: #ffffff; border-radius: 8px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28); }
+.attendanceTableWrapper { margin-top: 28px; }

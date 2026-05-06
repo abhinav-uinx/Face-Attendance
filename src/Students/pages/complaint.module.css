@@ -1,0 +1,79 @@
+.container {
+    margin-top: 2rem;
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    padding-right: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-right: 1rem;
+  }
+  
+  .sidebar h6 {
+    padding: 1rem;
+    color: #333;
+  }
+  
+  .listItem {
+    background-color: transparent;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .listItem.selected {
+    background-color: #e0f7fa;
+  }
+  
+  .listItemText {
+    color: #333;
+  }
+  
+  .listItemText.selected {
+    color: #00796b;
+  }
+  
+  .mainContent {
+    width: 70%;
+    padding-left: 1rem;
+  }
+  
+  .card {
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .heading {
+    color: #00796b;
+    margin-bottom: 1rem;
+  }
+  
+  .complaintText {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .divider {
+    margin: 10px 0;
+    background-color: #ccc;
+  }
+  
+  .noComplaints {
+    color: #666;
+  }
+  
+  .successMessage {
+    color: green;
+    margin-bottom: 1rem;
+  }
+  
+  .submitButton {
+    margin-top: 1rem;
+    background-color: #00796b;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  }

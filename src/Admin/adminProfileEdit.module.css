@@ -1,0 +1,245 @@
+.page {
+  color: #f5f5f7;
+  display: grid;
+  gap: 18px;
+}
+
+.header,
+.photoCard,
+.formCard {
+  background: rgba(15, 16, 18, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+}
+
+.header {
+  padding: 20px;
+}
+
+.header span {
+  color: rgba(245, 245, 247, 0.55);
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+  margin: 0;
+}
+
+.alert {
+  border-radius: 8px !important;
+}
+
+.contentGrid {
+  align-items: start;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+}
+
+.photoCard,
+.formCard {
+  padding: 20px;
+}
+
+.photoCard {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.avatar {
+  background: #24262b !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.05);
+  color: #ffffff !important;
+  font-size: 42px !important;
+  height: 128px !important;
+  width: 128px !important;
+}
+
+.photoText h3,
+.formHeader h3 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.photoText p,
+.formHeader p,
+.hint {
+  color: rgba(245, 245, 247, 0.55);
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 6px 0 0;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadLabel {
+  width: 100%;
+}
+
+.secondaryButton,
+.primaryButton {
+  border-radius: 999px !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  min-height: 42px;
+  text-transform: none !important;
+  transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease, border-color 180ms ease !important;
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  width: 100%;
+}
+
+.primaryButton {
+  background: #111214 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  margin-top: 4px !important;
+}
+
+.secondaryButton:hover,
+.primaryButton:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+  transform: translateY(-1px);
+}
+
+.formCard {
+  display: grid;
+  gap: 16px;
+}
+
+.passwordPanel {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 4px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.passwordPanel h4 {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1;
+  margin: 0;
+}
+
+.passwordPanel p {
+  color: rgba(245, 245, 247, 0.55);
+  font-size: 12.5px;
+  margin: 6px 0 0;
+}
+
+.passwordPanel .secondaryButton {
+  flex: 0 0 auto;
+  min-width: 180px;
+  width: auto;
+}
+
+.passwordFields {
+  display: grid;
+  gap: 16px;
+}
+
+.otpPanel {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.otpActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.otpActions .secondaryButton,
+.otpActions .primaryButton {
+  flex: 0 0 auto;
+  min-width: 130px;
+  width: auto;
+}
+
+.formHeader {
+  margin-bottom: 2px;
+}
+
+.formCard :global(.MuiOutlinedInput-root),
+.formCard :global(.MuiInputBase-input),
+.formCard :global(.MuiFormLabel-root) {
+  color: rgba(245, 245, 247, 0.86) !important;
+}
+
+.formCard :global(.MuiInputBase-input.Mui-disabled),
+.formCard :global(.MuiFormLabel-root.Mui-disabled) {
+  -webkit-text-fill-color: rgba(245, 245, 247, 0.86) !important;
+  color: rgba(245, 245, 247, 0.86) !important;
+}
+
+.formCard :global(.MuiFormHelperText-root) {
+  color: rgba(245, 245, 247, 0.55) !important;
+}
+
+.formCard :global(.MuiOutlinedInput-notchedOutline) {
+  border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+.formCard :global(.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline),
+.formCard :global(.Mui-focused .MuiOutlinedInput-notchedOutline) {
+  border-color: rgba(245, 245, 247, 0.52) !important;
+}
+
+.formCard :global(.MuiInputBase-input::placeholder) {
+  color: rgba(245, 245, 247, 0.42);
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .passwordPanel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .passwordPanel .secondaryButton {
+    width: 100%;
+  }
+
+  .otpActions {
+    flex-direction: column;
+  }
+
+  .otpActions .secondaryButton,
+  .otpActions .primaryButton {
+    width: 100%;
+  }
+
+}

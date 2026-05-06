@@ -1,0 +1,18 @@
+.home {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 88% 10%, rgba(64, 156, 255, 0.12), transparent 28%),
+    radial-gradient(circle at 14% 88%, rgba(255, 255, 255, 0.05), transparent 30%),
+    linear-gradient(135deg, #050506, #101114 48%, #08090b);
+}
+
+.homeContainer {
+  margin-left: 232px;
+  padding: 88px 24px 24px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .homeContainer { margin-left: 0; padding: 24px; }
+}

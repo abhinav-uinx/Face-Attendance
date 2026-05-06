@@ -1,0 +1,39 @@
+.logo {
+    font-family: "monospace";
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .navButton {
+    color: white;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+  .drawerTitle {
+    margin: 16px 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  
+  .drawerListItem {
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 0;
+  }
+  
+  .avatar {
+    background-color: #f50057 !important;
+  }
+  

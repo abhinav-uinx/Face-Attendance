@@ -1,0 +1,313 @@
+.page {
+  color: #f5f5f7;
+  display: grid;
+  gap: 18px;
+}
+
+.header,
+.selectorPanel,
+.studentsPanel {
+  background: rgba(15, 16, 18, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+}
+
+.eyebrow {
+  color: rgba(245, 245, 247, 0.55);
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+  margin: 0;
+}
+
+.backButton,
+.selectButton,
+.studentButton {
+  border: 0;
+  cursor: pointer;
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.backButton {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  gap: 6px;
+  padding: 10px 14px;
+}
+
+.backButton:hover,
+.selectButton:hover,
+.studentButton:hover {
+  transform: translateY(-1px);
+}
+
+.selectorPanel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+}
+
+.selectorGroup {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+}
+
+.disabledGroup {
+  opacity: 0.62;
+}
+
+.groupHeader {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.groupHeader > span {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.groupHeader h3,
+.sectionTitle h3 {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1;
+  margin: 0;
+}
+
+.groupHeader p,
+.sectionTitle span {
+  color: rgba(245, 245, 247, 0.52);
+  font-size: 13px;
+  font-weight: 650;
+  margin: 5px 0 0;
+}
+
+.chipGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.selectButton {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: rgba(245, 245, 247, 0.78);
+  font-size: 13px;
+  font-weight: 750;
+  min-height: 36px;
+  padding: 8px 13px;
+}
+
+.selectButton:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.activeButton {
+  background: rgba(125, 211, 252, 0.16);
+  border-color: rgba(125, 211, 252, 0.32);
+  color: #bae6fd;
+}
+
+.emptyHint,
+.emptyState {
+  color: rgba(245, 245, 247, 0.55);
+  font-size: 13px;
+}
+
+.studentsPanel {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+}
+
+.sectionTitle {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.studentGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.studentButton {
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  color: #ffffff;
+  display: grid;
+  gap: 5px;
+  min-height: 72px;
+  padding: 13px;
+  text-align: left;
+}
+
+.studentButton:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.studentButton strong {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.studentButton span {
+  color: rgba(245, 245, 247, 0.55);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.emptyState {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.dialogPaper {
+  background: #101114 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f5f5f7 !important;
+}
+
+.dialogTitle {
+  color: #ffffff;
+  font-weight: 800 !important;
+}
+
+.dialogContent {
+  display: grid;
+  gap: 16px;
+}
+
+.studentSummary {
+  display: grid;
+  gap: 5px;
+}
+
+.studentSummary strong {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.studentSummary span {
+  color: rgba(245, 245, 247, 0.55);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.attendanceTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 680px;
+}
+
+.attendanceTable th,
+.attendanceTable td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(245, 245, 247, 0.78);
+  font-size: 13px;
+  padding: 12px;
+  text-align: center;
+}
+
+.attendanceTable th {
+  background: rgba(245, 245, 247, 0.92);
+  border-bottom-color: rgba(0, 0, 0, 0.16);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  font-weight: 800;
+}
+
+.attendanceTable th:last-child,
+.attendanceTable td:last-child {
+  border-right: 0;
+}
+
+.attendanceTable tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.attendanceTable td:first-child,
+.attendanceTable th:first-child {
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .header,
+  .sectionTitle {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.presentBadge {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.absentBadge {
+  color: #64748b;
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}

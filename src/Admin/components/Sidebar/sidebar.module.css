@@ -1,0 +1,89 @@
+.sidebar {
+  width: 232px;
+  height: 100vh;
+  background: rgba(8, 8, 10, 0.86);
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 1000;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 18px 0 50px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(24px) saturate(140%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.top { display: flex; align-items: center; justify-content: center; padding: 5px 8px 8px; flex: 0 0 auto; }
+.logo { font-size: 21px; font-weight: 800; color: #f5f5f7; letter-spacing: 0; text-decoration: none; transition: transform 220ms ease, color 220ms ease; }
+.logo:hover { color: #ffffff; transform: translateY(-1px); }
+.divider { border: 0; height: 1px; background: rgba(255, 255, 255, 0.12); margin: 2px 0 8px; flex: 0 0 auto; }
+.center { min-height: 0; overflow: visible; }
+.center ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1), background-color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.card:hover,
+.card.active {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateX(3px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.card:hover::before,
+.card.active::before { opacity: 1; }
+.icon { display: inline-flex; align-items: center; justify-content: center; width: 19px; min-width: 19px; color: rgba(245, 245, 247, 0.7); margin-right: 8px; transition: transform 220ms ease, color 220ms ease; }
+.icon svg { width: 18px; height: 18px; }
+.link { position: relative; z-index: 1; width: 100%; display: flex; align-items: center; padding: 7px 10px; color: rgba(245, 245, 247, 0.78); font-size: 13px; font-weight: 600; line-height: 1; text-decoration: none; }
+.link:hover,
+.link:focus,
+.link:visited { text-decoration: none; }
+.link span,
+.logout span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card:hover .icon { transform: scale(1.05); color: #f5f5f7; }
+.card:hover .link, .card.active .link { color: #ffffff; }
+.logout { padding: 7px 10px; color: rgba(255, 214, 214, 0.86); font-size: 13px; font-weight: 650; line-height: 1; border-radius: 999px; }
+.logout:hover { background: rgba(255, 69, 58, 0.16); border-color: rgba(255, 69, 58, 0.24); box-shadow: 0 12px 28px rgba(255, 69, 58, 0.12); }
+
+@media (max-height: 620px) {
+  .sidebar { width: 218px; padding: 8px; }
+  .top { padding: 2px 8px 6px; }
+  .logo { font-size: 19px; }
+  .divider { margin: 1px 0 6px; }
+  .center ul { gap: 3px; }
+  .card { min-height: 30px; }
+  .link,
+  .logout { padding: 6px 9px; font-size: 12.5px; }
+  .icon { width: 17px; min-width: 17px; margin-right: 7px; }
+  .icon svg { width: 16px; height: 16px; }
+}
+
+@media (max-width: 900px) {
+  .sidebar { position: static; width: 100%; height: auto; min-height: auto; overflow: visible; }
+  .center { overflow: visible; }
+}

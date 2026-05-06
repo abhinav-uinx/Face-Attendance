@@ -1,0 +1,182 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #e5eefc;
+  background: #070b14;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg: #070b14;
+  --panel: rgba(15, 23, 42, 0.82);
+  --panel-solid: #101827;
+  --panel-soft: #151f31;
+  --line: rgba(148, 163, 184, 0.18);
+  --text: #e5eefc;
+  --muted: #96a3b8;
+  --accent: #22d3ee;
+  --accent-2: #8b5cf6;
+  --success: #22c55e;
+  --danger: #fb7185;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 14% 8%, rgba(34, 211, 238, 0.14), transparent 28%),
+    radial-gradient(circle at 86% 10%, rgba(139, 92, 246, 0.14), transparent 30%),
+    linear-gradient(135deg, #070b14 0%, #0a1020 48%, #101827 100%);
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+  letter-spacing: 0;
+}
+
+p {
+  color: var(--muted);
+}
+
+button,
+.MuiButton-root {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    filter 180ms ease;
+}
+
+button:hover,
+.MuiButton-root:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+  filter: none;
+}
+
+button:active,
+.MuiButton-root:active {
+  transform: translateY(0);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(34, 211, 238, 0.32);
+  outline-offset: 2px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(15, 23, 42, 0.86);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+th {
+  background: rgba(245, 245, 247, 0.92);
+  color: #000000;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+td {
+  color: #d9e6f7;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  border-right: 1px solid rgba(148, 163, 184, 0.1);
+  vertical-align: middle;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody tr {
+  transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+
+tbody tr:hover {
+  background: rgba(34, 211, 238, 0.08);
+  box-shadow: inset 4px 0 0 var(--accent);
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.MuiPaper-root {
+  background: #101827 !important;
+  color: var(--text) !important;
+  border: 1px solid var(--line);
+}
+
+.MuiTableCell-head {
+  background: rgba(245, 245, 247, 0.92) !important;
+  color: #000000 !important;
+  font-weight: 900 !important;
+}
+
+.MuiMenu-paper,
+.MuiPopover-paper {
+  background: #101114 !important;
+  color: var(--text) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.MuiMenuItem-root {
+  color: var(--text) !important;
+  transition: background-color 180ms ease !important;
+}
+
+.MuiMenuItem-root:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
