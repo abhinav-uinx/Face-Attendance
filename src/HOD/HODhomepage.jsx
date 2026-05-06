@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import style from "./HODhomepage.module.css";
+import style from "./hodhomepage.module.css";
 import supabase from "../utils/supabase";
 import HODNavbar from "./components/navbar/HodNavbar";
 import HODRouter from "../Router/HODRouter";
