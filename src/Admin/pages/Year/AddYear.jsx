@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import style from "./AddYear.module.css";
-import supabase from "../../../utils/supabase"; // Ensure correct Supabase setup
+import style from "./addYear.module.css";
+import supabase from "../../../utils/supabase";
 
 const AddYear = () => {
   const [formData, setFormData] = useState({ year: "" });
-  const [years, setYears] = useState([]); // Store fetched years
+  const [years, setYears] = useState([]);
 
   useEffect(() => {
-    fetchYears(); // Fetch years on component mount
+    fetchYears();
   }, []);
 
   const handleChange = (e) => {
@@ -27,14 +27,13 @@ const AddYear = () => {
 
       alert("Year added successfully!");
       setFormData({ year: "" });
-      fetchYears(); // Refresh list after adding
+      fetchYears();
     } catch (error) {
       alert("Failed to add year. Please try again.");
       console.error("Error inserting data:", error.message);
     }
   };
 
-  // Fetch years from Supabase
   const fetchYears = async () => {
     try {
       const { data, error } = await supabase.from("tbl_year").select("year_name");
@@ -70,7 +69,6 @@ const AddYear = () => {
         </form>
       </div>
 
-      {/* Display fetched years */}
       <div className={style.yearList}>
         <h3>Year List</h3>
         <ul>
