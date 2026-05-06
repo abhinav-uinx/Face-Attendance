@@ -22,12 +22,32 @@ You can use the following credentials to access the Administrative Dashboard:
 - **Attendance History**: View and manage historical records for every student.
 - **Responsive UI**: Modern, glassmorphic design built with vanilla CSS and Material UI.
 
-## 🛠️ Technology Stack
+## 🛠️ Comprehensive Technology Stack
 
-- **Frontend**: React (Vite), Material UI, Framer Motion
-- **Backend**: Supabase (Auth, Database, Storage)
-- **AI/ML**: face-api.js, TensorFlow.js
-- **Icons**: Lucide-React, Material Icons
+This project leverages a modern, high-performance stack to deliver a robust and secure face-attendance solution:
+
+### **Frontend & UI/UX**
+*   **React 18**: Core framework for a component-based, high-performance UI.
+*   **Vite**: Next-generation frontend tooling for ultra-fast build and development.
+*   **Material UI (MUI)**: Professional component library for sleek, accessible dashboards.
+*   **Framer Motion**: Advanced animations for smooth transitions and an interactive UX.
+*   **CSS Modules**: Scoped styling for clean, maintainable, and conflict-free vanilla CSS.
+*   **Lucide React**: Clean and consistent iconography.
+
+### **Artificial Intelligence & Machine Learning**
+*   **face-api.js**: Browser-based face detection, landmark detection, and recognition.
+*   **TensorFlow.js**: High-performance backend (WebGL/CPU) for running ML models in the browser.
+
+### **Backend & Infrastructure**
+*   **Supabase**: All-in-one backend-as-a-service (BaaS) providing:
+    *   **PostgreSQL**: Secure and scalable relational database.
+    *   **Supabase Auth**: Robust JWT-based authentication.
+    *   **Supabase Storage**: Object storage for hosting student and profile photos.
+*   **Vercel**: Professional deployment platform with integrated CI/CD and SPA routing.
+
+### **Development Tools**
+*   **Git**: Version control for collaborative and organized development.
+*   **ESLint**: Enforcing high-quality code standards and best practices.
 
 ## ⚙️ Local Setup
 
