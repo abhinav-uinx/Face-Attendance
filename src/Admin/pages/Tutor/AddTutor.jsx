@@ -8,7 +8,6 @@ import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import supabase from '../../../utils/supabase';
 
-<<<<<<< HEAD
 // Helper to convert and compress image to base64 Data URL
 const compressImage = (file, maxWidth = 800, quality = 0.85) => {
   return new Promise((resolve) => {
@@ -42,8 +41,6 @@ const compressImage = (file, maxWidth = 800, quality = 0.85) => {
   });
 };
 
-=======
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 const AddTutor = () => {
   const [formData, setFormData] = useState({
     photo: "",
@@ -62,10 +59,7 @@ const AddTutor = () => {
   const [programmes, setProgrammes] = useState([]);
   const [designations, setDesignations] = useState([]);
   const [years, setYears] = useState([]); // 🆕 Added years state
-<<<<<<< HEAD
   const [isSubmitting, setIsSubmitting] = useState(false);
-=======
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
   useEffect(() => {
     getDepartments();
@@ -124,16 +118,12 @@ const AddTutor = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-<<<<<<< HEAD
     setIsSubmitting(true);
-=======
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
     try {
       let imageUrl = "";
 
       if (formData.photo) {
-<<<<<<< HEAD
         const fileExt = formData.photo.name ? formData.photo.name.split(".").pop() : "jpg";
         const fileName = `${formData.registerNumber}.${fileExt}`;
         const filePath = fileName;
@@ -168,42 +158,12 @@ const AddTutor = () => {
         tutor_name: formData.name.trim(),
         tutor_contact: formData.phone.trim(),
         tutor_email: formData.email.trim().toLowerCase(),
-=======
-        const fileExt = formData.photo.name.split(".").pop();
-        const fileName = `${formData.registerNumber}.${fileExt}`;
-        const filePath = fileName;
-
-        const { error: uploadError } = await supabase.storage
-          .from("tutor")
-          .upload(filePath, formData.photo, {
-            cacheControl: "3600",
-            upsert: true,
-          });
-
-        if (uploadError) {
-          throw new Error("Image upload failed: " + uploadError.message);
-        }
-
-        const { data: publicUrlData } = supabase.storage
-          .from("tutor")
-          .getPublicUrl(filePath);
-
-        imageUrl = publicUrlData.publicUrl;
-      }
-
-      const { data, error } = await supabase.from("tbl_tutor").insert([{
-        tutor_id: formData.registerNumber,
-        tutor_name: formData.name,
-        tutor_contact: formData.phone,
-        tutor_email: formData.email,
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
         tutor_password: formData.password,
         department_id: formData.department,
         programme_id: formData.programme,
         designation_id: formData.designation,
         tutor_photo: imageUrl || null,
         year_id: formData.year, // 🆕 Assign selected year_id
-<<<<<<< HEAD
       }], { onConflict: "tutor_id" });
 
       if (error) {
@@ -218,14 +178,6 @@ const AddTutor = () => {
 
       console.log("Tutor Data Submitted successfully:", data);
       alert(`Tutor "${formData.name}" added successfully!`);
-=======
-      }]);
-
-      if (error) throw error;
-
-      console.log("Tutor Data Submitted:", data);
-      alert("Tutor added successfully!");
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
       setFormData({
         photo: "",
@@ -240,7 +192,6 @@ const AddTutor = () => {
         year: "", // 🆕 Reset year field
       });
 
-<<<<<<< HEAD
       const fileInput = document.getElementById("photo-upload");
       if (fileInput) fileInput.value = "";
 
@@ -249,11 +200,6 @@ const AddTutor = () => {
       alert(error.message || "Failed to add tutor. Please try again.");
     } finally {
       setIsSubmitting(false);
-=======
-    } catch (error) {
-      console.error("Error inserting data:", error.message);
-      alert("Failed to add tutor. Please try again.");
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
     }
   };
 
@@ -363,13 +309,9 @@ const AddTutor = () => {
           <TextField label="Password" variant="standard" name="password" type="password" value={formData.password} onChange={handleChange} fullWidth required />
           <TextField label="Register Number" variant="standard" name="registerNumber" value={formData.registerNumber} onChange={handleChange} fullWidth required />
 
-<<<<<<< HEAD
           <button type="submit" className={style.submitButton} disabled={isSubmitting}>
             {isSubmitting ? "Adding Tutor..." : "Add Tutor"}
           </button>
-=======
-          <button type="submit" className={style.submitButton}>Add Tutor</button>
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
         </form>
       </div>
     </div>

@@ -74,25 +74,15 @@ const StudentProfileEdit = () => {
 
     setOriginalStudent(data);
 
-<<<<<<< HEAD
     // ✅ Handle both relative, full HTTP, and Base64 Data URLs
     if (data.stud_photo) {
       if (data.stud_photo.startsWith("http") || data.stud_photo.startsWith("data:")) {
-=======
-    // ✅ Handle both relative and full URLs
-    if (data.stud_photo) {
-      if (data.stud_photo.startsWith("http")) {
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
         setPhotoUrl(data.stud_photo);
       } else {
         const { data: urlData } = supabase.storage
           .from("attendance")
           .getPublicUrl(data.stud_photo);
-<<<<<<< HEAD
         setPhotoUrl(urlData?.publicUrl || data.stud_photo);
-=======
-        setPhotoUrl(urlData.publicUrl);
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
       }
     }
   };

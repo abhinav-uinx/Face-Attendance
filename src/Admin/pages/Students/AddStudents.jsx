@@ -11,7 +11,6 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import supabase from '../../../utils/supabase';
 
-<<<<<<< HEAD
 // Helper to convert and compress image to base64 Data URL
 const compressImage = (file, maxWidth = 800, quality = 0.85) => {
   return new Promise((resolve) => {
@@ -45,8 +44,6 @@ const compressImage = (file, maxWidth = 800, quality = 0.85) => {
   });
 };
 
-=======
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 const AddStudents = () => {
   const [formData, setFormData] = useState({
     photo: "",
@@ -64,11 +61,8 @@ const AddStudents = () => {
   const [departments, setDepartments] = useState([]);
   const [programmes, setProgrammes] = useState([]);
   const [years, setYears] = useState([]);
-<<<<<<< HEAD
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [feedback, setFeedback] = useState({ type: "", message: "" });
-=======
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
   useEffect(() => {
     getDepartments();
@@ -111,17 +105,13 @@ const AddStudents = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-<<<<<<< HEAD
     setIsSubmitting(true);
     setFeedback({ type: "", message: "" });
 
-=======
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
     try {
       let photoUrl = null;
 
       if (formData.photo) {
-<<<<<<< HEAD
         const fileExt = formData.photo.name ? formData.photo.name.split('.').pop() : 'jpg';
         const fileName = `${formData.registerNumber}.${fileExt}`;
         const filePath = `students/${fileName}`;
@@ -159,37 +149,10 @@ const AddStudents = () => {
         stud_password: formData.password,
         stud_email: formData.email.trim().toLowerCase(),
         student_id: formData.registerNumber.trim(),
-=======
-        const fileExt = formData.photo.name.split('.').pop();
-        const fileName = `${formData.registerNumber}.${fileExt}`;
-        const filePath = `students/${fileName}`;
-
-        // Upload file to Supabase Storage
-        const { error: uploadError } = await supabase.storage
-          .from("attendance")
-          .upload(filePath, formData.photo, { upsert: true });
-
-        if (uploadError) throw uploadError;
-
-        // Fetch the correct public URL after upload
-        photoUrl = supabase.storage.from("attendance").getPublicUrl(filePath).data.publicUrl;
-      }
-
-      console.log("Uploaded Photo URL:", photoUrl);
-
-      // Insert student details into tbl_student
-      const { data, error } = await supabase.from("tbl_student").insert([{
-        student_name: formData.name,
-        stud_contact: formData.phone,
-        stud_password: formData.password,
-        stud_email: formData.email,
-        student_id: formData.registerNumber,
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
         year_id: formData.year,
         department_id: formData.department,
         programme_id: formData.programme,
         stud_gender: formData.gender,
-<<<<<<< HEAD
         stud_photo: photoUrl,
       }], { onConflict: "student_id" });
 
@@ -206,15 +169,6 @@ const AddStudents = () => {
       console.log("Student Data Submitted successfully:", data);
       setFeedback({ type: "success", message: `Student "${formData.name}" added successfully!` });
       alert(`Student "${formData.name}" added successfully!`);
-=======
-        stud_photo: photoUrl,  // ✅ Insert photo URL here
-      }]);
-
-      if (error) throw error;
-
-      console.log("Student Data Submitted:", data);
-      alert("Student added successfully!");
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
       // Reset form after submission
       setFormData({
@@ -229,7 +183,6 @@ const AddStudents = () => {
         registerNumber: "",
         gender: "",
       });
-<<<<<<< HEAD
 
       const fileInput = document.getElementById("photo-upload");
       if (fileInput) fileInput.value = "";
@@ -240,11 +193,6 @@ const AddStudents = () => {
       alert(msg);
     } finally {
       setIsSubmitting(false);
-=======
-    } catch (error) {
-      console.error("Error inserting data:", error);
-      alert("Failed to add student. Please try again.");
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
     }
   };
 
@@ -306,7 +254,6 @@ const AddStudents = () => {
           <TextField label="Password" variant="standard" name="password" type="password" value={formData.password} onChange={handleChange} fullWidth required />
           <TextField label="Register Number" variant="standard" name="registerNumber" value={formData.registerNumber} onChange={handleChange} fullWidth required />
 
-<<<<<<< HEAD
           {feedback.message && (
             <div className={feedback.type === "success" ? style.alertSuccess : style.alertError}>
               {feedback.message}
@@ -316,9 +263,6 @@ const AddStudents = () => {
           <button type="submit" className={style.submitButton} disabled={isSubmitting}>
             {isSubmitting ? "Adding Student..." : "Add Student"}
           </button>
-=======
-          <button type="submit" className={style.submitButton}>Add Student</button>
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
         </form>
       </div>
     </div>

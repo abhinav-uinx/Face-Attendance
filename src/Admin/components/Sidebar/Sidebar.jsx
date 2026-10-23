@@ -4,28 +4,20 @@ import style from "./sidebar.module.css";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import FolderSharedIcon from "@mui/icons-material/FolderShared";
 import GroupIcon from "@mui/icons-material/Group";
-<<<<<<< HEAD
 import { PiStudentFill } from "react-icons/pi";
-=======
-import { PiStudentFill } from "react-icons/pi"; // Corrected import
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 import ClassIcon from "@mui/icons-material/Class";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import { FaCalendarAlt } from "react-icons/fa";
 import SubjectIcon from "@mui/icons-material/Subject";
 import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList';
-<<<<<<< HEAD
 import faceLogo from "../../../assets/face.png";
 import supabase from "../../../utils/supabase";
-=======
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
 const Sidebar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-<<<<<<< HEAD
   const handleLogout = async () => {
     if (window.confirm("Are you sure you want to logout?")) {
       try {
@@ -34,11 +26,6 @@ const Sidebar = () => {
         // ignore
       }
       sessionStorage.clear();
-=======
-  const handleLogout = () => {
-    if (window.confirm("Are you sure you want to logout?")) {
-      console.log("Logging out...");
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
       navigate("/login");
     }
   };
@@ -46,7 +33,6 @@ const Sidebar = () => {
   return (
     <div className={style.sidebar}>
       <div className={style.top}>
-<<<<<<< HEAD
         <Link to="/adminhome" className={style.logoLink}>
           <div className={style.logoIconBadge}>
             <img src={faceLogo} alt="Logo" className={style.logoImg} />
@@ -55,10 +41,6 @@ const Sidebar = () => {
             <span className={style.logoTitle}>Face Inn</span>
             <span className={style.logoSub}>Admin Panel</span>
           </div>
-=======
-        <Link to="/adminhome" className={style.logo}>
-          FACE INN
->>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
         </Link>
       </div>
 
