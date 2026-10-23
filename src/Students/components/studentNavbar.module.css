@@ -1,0 +1,39 @@
+.navbar {
+  height: 58px;
+  background: rgba(8, 8, 10, 0.9);
+  color: #e5eefc;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(22px) saturate(140%);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-sizing: border-box;
+}
+.wrapper { display: flex; justify-content: space-between; align-items: center; width: 100%; min-width: 0; }
+.spacer { flex-grow: 1; }
+.items { display: flex; align-items: center; justify-content: flex-end; gap: 8px; min-width: 0; }
+.item { display: flex; align-items: center; justify-content: center; min-width: 38px; min-height: 36px; padding: 6px 10px; cursor: pointer; border-radius: 999px; color: #cbd5e1; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.08); transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease; box-sizing: border-box; white-space: nowrap; }
+.item:hover { transform: translateY(-1px); color: #ffffff; background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.2); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.24); }
+.icon { font-size: 19px; color: rgba(245, 245, 247, 0.78); }
+.item span { font-size: 13px; font-weight: 600; line-height: 1; margin-left: 6px; }
+.profileContent { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 18px; }
+.avatarContainer { width: 34px; height: 34px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; border: 1px solid rgba(255, 255, 255, 0.24); box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06); }
+.avatarImg, .profilePic, .profileIcon { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.profilePic { width: 96px; height: 96px; }
+.profilePicContainer { position: relative; width: 86px; height: 86px; border-radius: 50%; overflow: hidden; }
+.fileInput { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.editIcon { position: absolute; bottom: 5px; right: 5px; background-color: rgba(7, 11, 20, 0.84); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; }
+.userName { font-size: 17px; font-weight: 850; color: #e5eefc; margin-top: 10px; }
+.userEmail, .userDetail { font-size: 14px; color: #96a3b8; margin-top: 4px; }
+.profileButton { width: 100%; margin-top: 14px; background: linear-gradient(135deg, #0891b2, #7c3aed); color: white; padding: 10px 14px; border-radius: 8px; }
+@media (max-width: 900px) {
+  .navbar { height: auto; min-height: 56px; padding: 10px 12px; }
+  .items { flex-wrap: wrap; gap: 6px; }
+  .item { min-width: 34px; min-height: 32px; padding: 5px 8px; }
+  .icon { font-size: 18px; }
+  .avatarContainer { width: 30px; height: 30px; }
+}

@@ -1,0 +1,17 @@
+.container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 28px auto;
+  padding: 28px;
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+}
+.title { font-size: 30px; font-weight: 850; margin: 0 0 24px; color: #e5eefc; }
+.programContainer, .yearContainer { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 24px; }
+.programButton, .yearButton, .backButton, .viewButton { padding: 12px 18px; background: rgba(15, 23, 42, 0.92); color: #e5eefc; border: 1px solid rgba(148, 163, 184, 0.18); border-radius: 8px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28); }
+.programButton:hover, .yearButton:hover, .backButton:hover, .viewButton:hover, .active { background: linear-gradient(135deg, #0891b2, #7c3aed); color: #ffffff; border-color: rgba(34, 211, 238, 0.5); }
+.studentTable { margin-top: 18px; }
+.studentPhoto { width: 74px; height: 86px; object-fit: cover; border-radius: 8px; border: 2px solid rgba(226, 232, 240, 0.18); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.32); transition: transform 180ms ease, box-shadow 180ms ease; }
+.studentPhoto:hover { transform: scale(1.05); box-shadow: 0 16px 34px rgba(34, 211, 238, 0.22); }
+.attendanceTableWrapper { margin-top: 28px; }

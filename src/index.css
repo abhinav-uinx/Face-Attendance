@@ -1,0 +1,229 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #0b132b;
+  background: #f8f9fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Theme Tokens: Screenshot Match (#f8f9fa background, #0b132b headings, #2563eb accents) */
+  --bg: #f8f9fa;
+  --bg-subtle: #f1f3f7;
+  --panel: #ffffff;
+  --panel-solid: #ffffff;
+  --panel-soft: #f8f9fa;
+  --line: #eef2f6;
+  --line-strong: #e2e8f0;
+  --text: #0b132b;
+  --text-secondary: #4b5563;
+  --muted: #5e6e82;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-light: #eff6ff;
+  --accent-2: #3b82f6;
+  --success: #059669;
+  --success-light: #ecfdf5;
+  --danger: #ef4444;
+  --danger-light: #fef2f2;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 6px 16px -2px rgba(11, 19, 43, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text);
+  background: #f8f9fa;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text);
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+button,
+.MuiButton-root {
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  background: #ffffff;
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+  transition: all 160ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover,
+.MuiButton-root:hover {
+  transform: translateY(-1px);
+  background: #f8f9fa;
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+  color: var(--accent);
+}
+
+button:active,
+.MuiButton-root:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+th {
+  background: #ffffff;
+  color: #0b132b;
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1.5px solid #f1f5f9;
+}
+
+td {
+  color: var(--text);
+  padding: 14px 20px;
+  border-bottom: 1px solid #f8fafc;
+  vertical-align: middle;
+  font-size: 13.5px;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody tr {
+  transition: background-color 150ms ease;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: var(--text);
+}
+
+/* MUI Customizations for Clean Light Theme */
+.MuiPaper-root {
+  background: #ffffff !important;
+  color: var(--text) !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: var(--shadow) !important;
+  border-radius: 12px !important;
+}
+
+.MuiTableCell-head {
+  background: #f8fafc !important;
+  color: var(--muted) !important;
+  font-weight: 700 !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.MuiTableCell-body {
+  color: var(--text) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.MuiMenu-paper,
+.MuiPopover-paper {
+  background: #ffffff !important;
+  color: var(--text) !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: var(--shadow-lg) !important;
+  border-radius: 10px !important;
+}
+
+.MuiMenuItem-root {
+  color: var(--text) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: background-color 140ms ease !important;
+}
+
+.MuiMenuItem-root:hover {
+  background: #f1f5f9 !important;
+  color: var(--accent) !important;
+}
+
+/* Material UI Inputs */
+.MuiInputBase-root {
+  color: var(--text) !important;
+}
+
+.MuiInputLabel-root {
+  color: var(--muted) !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: var(--accent) !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: var(--line) !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--line-strong) !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--accent) !important;
+}
