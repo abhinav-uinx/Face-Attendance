@@ -1,5 +1,9 @@
 .page {
+<<<<<<< HEAD
   color: #0f172a;
+=======
+  color: #f5f5f7;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   display: grid;
   gap: 18px;
 }
@@ -7,10 +11,17 @@
 .header,
 .selectorPanel,
 .studentsPanel {
+<<<<<<< HEAD
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+=======
+  background: rgba(15, 16, 18, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .header {
@@ -18,6 +29,7 @@
   display: flex;
   justify-content: space-between;
   gap: 16px;
+<<<<<<< HEAD
   padding: 20px 24px;
 }
 
@@ -37,6 +49,24 @@
   font-weight: 800;
   letter-spacing: -0.015em;
   line-height: 1.2;
+=======
+  padding: 20px;
+}
+
+.eyebrow {
+  color: rgba(245, 245, 247, 0.55);
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   margin: 0;
 }
 
@@ -45,11 +75,16 @@
 .studentButton {
   border: 0;
   cursor: pointer;
+<<<<<<< HEAD
   transition: all 160ms cubic-bezier(0.4, 0, 0.2, 1);
+=======
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .backButton {
   align-items: center;
+<<<<<<< HEAD
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 999px;
@@ -66,18 +101,39 @@
   background: #f8fafc;
   border-color: #cbd5e1;
   color: #2563eb;
+=======
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  gap: 6px;
+  padding: 10px 14px;
+}
+
+.backButton:hover,
+.selectButton:hover,
+.studentButton:hover {
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   transform: translateY(-1px);
 }
 
 .selectorPanel {
   display: grid;
   gap: 12px;
+<<<<<<< HEAD
   padding: 20px;
+=======
+  padding: 16px;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .selectorGroup {
   display: grid;
   gap: 12px;
+<<<<<<< HEAD
   padding: 16px;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
@@ -86,6 +142,16 @@
 
 .disabledGroup {
   opacity: 0.55;
+=======
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+}
+
+.disabledGroup {
+  opacity: 0.62;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .groupHeader {
@@ -96,6 +162,7 @@
 
 .groupHeader > span {
   align-items: center;
+<<<<<<< HEAD
   background: #eff6ff;
   border: 1px solid #dbeafe;
   border-radius: 50%;
@@ -106,23 +173,48 @@
   height: 28px;
   justify-content: center;
   width: 28px;
+=======
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .groupHeader h3,
 .sectionTitle h3 {
+<<<<<<< HEAD
   color: #0f172a;
   font-size: 15.5px;
   font-weight: 700;
   line-height: 1.2;
+=======
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   margin: 0;
 }
 
 .groupHeader p,
 .sectionTitle span {
+<<<<<<< HEAD
   color: #64748b;
   font-size: 12.5px;
   font-weight: 500;
   margin: 3px 0 0;
+=======
+  color: rgba(245, 245, 247, 0.52);
+  font-size: 13px;
+  font-weight: 650;
+  margin: 5px 0 0;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .chipGrid {
@@ -132,6 +224,7 @@
 }
 
 .selectButton {
+<<<<<<< HEAD
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
@@ -153,18 +246,48 @@
   border-color: #bfdbfe !important;
   color: #2563eb !important;
   font-weight: 700 !important;
+=======
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: rgba(245, 245, 247, 0.78);
+  font-size: 13px;
+  font-weight: 750;
+  min-height: 36px;
+  padding: 8px 13px;
+}
+
+.selectButton:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.activeButton {
+  background: rgba(125, 211, 252, 0.16);
+  border-color: rgba(125, 211, 252, 0.32);
+  color: #bae6fd;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .emptyHint,
 .emptyState {
+<<<<<<< HEAD
   color: #64748b;
+=======
+  color: rgba(245, 245, 247, 0.55);
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   font-size: 13px;
 }
 
 .studentsPanel {
   display: grid;
   gap: 16px;
+<<<<<<< HEAD
   padding: 20px;
+=======
+  padding: 18px;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .sectionTitle {
@@ -176,12 +299,17 @@
 
 .studentGrid {
   display: grid;
+<<<<<<< HEAD
   gap: 12px;
+=======
+  gap: 10px;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
 .studentButton {
   align-items: flex-start;
+<<<<<<< HEAD
   background: #f8fafc;
   border: 1.5px solid #e2e8f0;
   border-radius: 10px;
@@ -199,16 +327,36 @@
   border-color: #2563eb;
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(37, 99, 235, 0.08);
+=======
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  color: #ffffff;
+  display: grid;
+  gap: 5px;
+  min-height: 72px;
+  padding: 13px;
+  text-align: left;
+}
+
+.studentButton:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.16);
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .studentButton strong {
   font-size: 14px;
+<<<<<<< HEAD
   font-weight: 700;
   color: #0f172a;
+=======
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   line-height: 1.2;
 }
 
 .studentButton span {
+<<<<<<< HEAD
   color: #64748b;
   font-size: 12px;
   font-weight: 600;
@@ -234,6 +382,29 @@
   color: #0f172a !important;
   font-weight: 800 !important;
   font-size: 18px !important;
+=======
+  color: rgba(245, 245, 247, 0.55);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.emptyState {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.dialogPaper {
+  background: #101114 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f5f5f7 !important;
+}
+
+.dialogTitle {
+  color: #ffffff;
+  font-weight: 800 !important;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .dialogContent {
@@ -243,6 +414,7 @@
 
 .studentSummary {
   display: grid;
+<<<<<<< HEAD
   gap: 4px;
   background: #f8fafc;
   padding: 12px 16px;
@@ -259,6 +431,20 @@
   color: #64748b;
   font-size: 13px;
   font-weight: 600;
+=======
+  gap: 5px;
+}
+
+.studentSummary strong {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.studentSummary span {
+  color: rgba(245, 245, 247, 0.55);
+  font-size: 13px;
+  font-weight: 700;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .tableWrap {
@@ -267,27 +453,51 @@
 
 .attendanceTable {
   width: 100%;
+<<<<<<< HEAD
   border-collapse: collapse;
+=======
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   min-width: 680px;
 }
 
 .attendanceTable th,
 .attendanceTable td {
+<<<<<<< HEAD
   border-bottom: 1px solid #f8fafc;
   border-right: none;
   color: #0b132b;
   font-size: 13.5px;
   padding: 14px 16px;
+=======
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(245, 245, 247, 0.78);
+  font-size: 13px;
+  padding: 12px;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   text-align: center;
 }
 
 .attendanceTable th {
+<<<<<<< HEAD
   background: #ffffff;
   border-bottom: 1.5px solid #f1f5f9;
   color: #0b132b;
   font-weight: 800;
   letter-spacing: -0.01em;
   font-size: 13px;
+=======
+  background: rgba(245, 245, 247, 0.92);
+  border-bottom-color: rgba(0, 0, 0, 0.16);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  font-weight: 800;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .attendanceTable th:last-child,
@@ -313,9 +523,14 @@
 }
 
 .presentBadge {
+<<<<<<< HEAD
   background: #ecfdf5;
   border: 1px solid #a7f3d0;
   color: #059669;
+=======
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   padding: 4px 10px;
   border-radius: 6px;
   font-weight: 700;
@@ -324,8 +539,15 @@
 }
 
 .absentBadge {
+<<<<<<< HEAD
   color: #94a3b8;
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 600;
+=======
+  color: #64748b;
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.5;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }

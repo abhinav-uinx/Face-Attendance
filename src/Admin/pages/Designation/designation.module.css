@@ -1,4 +1,5 @@
 .color {
+<<<<<<< HEAD
   color: #0f172a;
   display: grid;
   gap: 18px;
@@ -21,6 +22,28 @@
   font-weight: 800;
   letter-spacing: -0.015em;
   line-height: 1.2;
+=======
+  color: #f5f5f7;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(280px, 420px) minmax(320px, 1fr);
+}
+
+.container,
+.departmentList {
+  background: rgba(15, 16, 18, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+}
+
+.title,
+.departmentList h3 {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.15;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   margin: 0 0 18px;
 }
 
@@ -33,15 +56,24 @@
 .container :global(.MuiInputBase-input),
 .container :global(.MuiFormLabel-root),
 .container :global(.MuiInputLabel-root) {
+<<<<<<< HEAD
   color: #0f172a !important;
 }
 
 .container :global(.MuiInput-underline:before) {
   border-bottom-color: #e2e8f0 !important;
+=======
+  color: rgba(245, 245, 247, 0.82) !important;
+}
+
+.container :global(.MuiInput-underline:before) {
+  border-bottom-color: rgba(255, 255, 255, 0.18) !important;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .container :global(.MuiInput-underline:hover:not(.Mui-disabled):before),
 .container :global(.MuiInput-underline:after) {
+<<<<<<< HEAD
   border-bottom-color: #2563eb !important;
 }
 
@@ -65,6 +97,30 @@
 }
 
 .designationList ul {
+=======
+  border-bottom-color: rgba(245, 245, 247, 0.68) !important;
+}
+
+.submitButton {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 999px !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  min-height: 40px;
+  text-transform: none !important;
+  transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease !important;
+}
+
+.submitButton:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+  transform: translateY(-1px);
+}
+
+.departmentList ul {
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   display: grid;
   gap: 10px;
   list-style: none;
@@ -72,6 +128,7 @@
   padding: 0;
 }
 
+<<<<<<< HEAD
 .designationList li {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
@@ -89,6 +146,25 @@
 
 .designationList li strong {
   color: #0f172a;
+=======
+.departmentList li {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  color: rgba(245, 245, 247, 0.68);
+  padding: 13px 14px;
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.departmentList li:hover {
+  background: rgba(255, 255, 255, 0.085);
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+.departmentList li strong {
+  color: #ffffff;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 @media (max-width: 900px) {

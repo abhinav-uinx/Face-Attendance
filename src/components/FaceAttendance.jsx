@@ -1,10 +1,15 @@
 import React from "react";
+<<<<<<< HEAD
 import { LogIn, LogOut, Camera, ArrowRight, ShieldCheck } from "lucide-react";
 import Styles from "./faceAttendanceMode.module.css";
+=======
+import Styles from "./faceAttendance.module.css"; // Import styles
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
 const FaceAttendance = () => {
   const openNewWindow = (path) => {
     const fullUrl = `${window.location.origin}${path}`;
+<<<<<<< HEAD
     window.open(fullUrl, "_blank", "noopener,noreferrer,width=1280,height=850");
   };
 
@@ -68,6 +73,21 @@ const FaceAttendance = () => {
           <ShieldCheck className="w-4 h-4 text-emerald-600" />
           <span>Biometric neural recognition active • Opens in full kiosk window</span>
         </div>
+=======
+    window.open(fullUrl, "_blank", "noopener,noreferrer,width=800,height=600");
+  };
+
+  return (
+    <div className={Styles.popupContainer}>
+      <div className={Styles.popup}>
+        <h2>Select Attendance Mode</h2>
+        <button className={Styles.inButton} onClick={() => openNewWindow("/FaceAttendanceIN")}>
+          IN
+        </button>
+        <button className={Styles.outButton} onClick={() => openNewWindow("/FaceAttendanceOUT")}>
+          OUT
+        </button>
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
       </div>
     </div>
   );

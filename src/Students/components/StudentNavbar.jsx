@@ -72,6 +72,7 @@ const StudentNavbar = () => {
 
   const fetchProfilePic = async (photoUrl) => {
     try {
+<<<<<<< HEAD
       if (!photoUrl) return;
 
       if (photoUrl.startsWith("http") || photoUrl.startsWith("data:")) {
@@ -82,6 +83,17 @@ const StudentNavbar = () => {
       const { data, error } = await supabase.storage
         .from("attendance")
         .getPublicUrl(photoUrl);
+=======
+      // Remove full URL prefix if accidentally stored
+      const photoPath = photoUrl.replace(
+        "https://dtnvxnvoanntvveldndi.supabase.co/storage/v1/object/public/attendance/",
+        ""
+      );
+
+      const { data, error } = await supabase.storage
+        .from("attendance")
+        .getPublicUrl(photoPath);
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
       if (error) {
         console.error("Error loading profile picture:", error);
@@ -89,6 +101,10 @@ const StudentNavbar = () => {
       }
 
       if (data?.publicUrl) {
+<<<<<<< HEAD
+=======
+        console.log("Resolved profile picture URL:", data.publicUrl);
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
         setProfilePic(data.publicUrl);
       }
     } catch (err) {

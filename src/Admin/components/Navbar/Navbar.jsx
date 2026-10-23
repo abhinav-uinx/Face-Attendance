@@ -81,7 +81,11 @@ const Navbar = () => {
         // 2. Fallback to emergency session
         const storedAid = sessionStorage.getItem("aid");
         if (storedAid) {
+<<<<<<< HEAD
           adminEmail = sessionStorage.getItem("admin_email") || "admin@gmail.com";
+=======
+          adminEmail = "admin@gmail.com";
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
         }
       }
 

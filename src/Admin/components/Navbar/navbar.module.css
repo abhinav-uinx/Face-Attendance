@@ -1,4 +1,5 @@
 .navbar {
+<<<<<<< HEAD
   width: calc(100% - 236px);
   height: 64px;
   background: rgba(255, 255, 255, 0.92);
@@ -12,10 +13,26 @@
   position: fixed;
   top: 0;
   left: 236px;
+=======
+  width: calc(100% - 232px);
+  height: 64px;
+  background: linear-gradient(180deg, rgba(8, 8, 10, 0.96), rgba(8, 8, 10, 0.84));
+  color: #e5eefc;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(22px) saturate(140%);
+  position: fixed;
+  top: 0;
+  left: 232px;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   z-index: 999;
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -35,6 +52,11 @@
   gap: 10px;
   min-width: 0;
 }
+=======
+.wrapper { display: flex; justify-content: space-between; align-items: center; width: 100%; min-width: 0; }
+.spacer { flex-grow: 1; }
+.items { display: flex; align-items: center; justify-content: flex-end; gap: 8px; min-width: 0; }
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
 .pageInfo {
   display: flex;
@@ -44,11 +66,16 @@
 }
 
 .pageInfo span {
+<<<<<<< HEAD
   color: #64748b;
+=======
+  color: rgba(245, 245, 247, 0.5);
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   font-size: 11px;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
+<<<<<<< HEAD
   letter-spacing: 0.04em;
 }
 
@@ -59,6 +86,16 @@
   line-height: 1.2;
   margin: 4px 0 0;
   letter-spacing: -0.015em;
+=======
+}
+
+.pageInfo h1 {
+  color: #f5f5f7;
+  font-size: 19px;
+  font-weight: 760;
+  line-height: 1.15;
+  margin: 5px 0 0;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .item,
@@ -66,6 +103,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   min-height: 38px;
   padding: 6px 14px;
   cursor: pointer;
@@ -77,11 +115,25 @@
   box-sizing: border-box;
   white-space: nowrap;
   user-select: none;
+=======
+  min-width: 38px;
+  min-height: 36px;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 999px;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+  box-sizing: border-box;
+  white-space: nowrap;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }
 
 .item:hover,
 .searchButton:hover {
   transform: translateY(-1px);
+<<<<<<< HEAD
   color: #2563eb;
   background: #ffffff;
   border-color: #cbd5e1;
@@ -104,11 +156,23 @@
   line-height: 1;
   margin-left: 6px;
 }
+=======
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.24);
+}
+
+.icon { font-size: 19px; color: rgba(245, 245, 247, 0.78); }
+.item span,
+.searchButton span { font-size: 13px; font-weight: 600; line-height: 1; margin-left: 6px; }
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 
 .profileContent {
   display: flex;
   flex-direction: column;
   gap: 14px;
+<<<<<<< HEAD
   padding: 16px;
   width: 270px;
 }
@@ -119,6 +183,18 @@
   border-radius: 12px !important;
   box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1) !important;
   color: #0f172a !important;
+=======
+  padding: 14px;
+  width: 280px;
+}
+
+.profilePopover {
+  background: rgba(16, 17, 20, 0.96) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.38) !important;
+  color: #f5f5f7 !important;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   margin-top: 10px;
   overflow: hidden;
 }
@@ -131,13 +207,19 @@
 }
 
 .avatarContainer {
+<<<<<<< HEAD
   width: 36px;
   height: 36px;
+=======
+  width: 34px;
+  height: 34px;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   border: 1.5px solid #dbeafe;
   box-shadow: 0 0 0 2px #eff6ff;
   position: relative;
@@ -214,4 +296,59 @@
     min-height: 60px;
     padding: 10px 16px;
   }
+=======
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06);
+  position: relative;
+}
+
+.avatarImg, .profilePic, .profileIcon { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.profilePic { display: block; }
+.profilePicContainer {
+  flex: 0 0 auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
+}
+.fileInput { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.editIcon { position: absolute; bottom: 5px; right: 5px; background-color: rgba(7, 11, 20, 0.84); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; }
+.profileText { min-width: 0; }
+.userName { font-size: 15px; font-weight: 850; color: #f5f5f7; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.userEmail, .userDetail { font-size: 12.5px; color: rgba(245, 245, 247, 0.55); margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.profileButton {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  padding: 9px 12px !important;
+  border-radius: 999px !important;
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  text-transform: none !important;
+}
+
+.profileButton:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+}
+
+
+@media (max-height: 620px) {
+  .navbar { width: calc(100% - 218px); left: 218px; height: 56px; padding: 0 14px; }
+  .items { gap: 6px; }
+  .item { min-width: 34px; min-height: 32px; padding: 5px 8px; }
+  .icon { font-size: 18px; }
+  .item span { font-size: 12.5px; }
+  .pageInfo h1 { font-size: 17px; }
+  .pageInfo span { font-size: 10px; }
+  .avatarContainer { width: 30px; height: 30px; }
+}
+
+@media (max-width: 900px) {
+  .navbar { position: static; width: 100%; left: 0; height: auto; min-height: 56px; padding: 10px 12px; }
+  .items { flex-wrap: wrap; gap: 6px; }
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
 }

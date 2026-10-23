@@ -106,6 +106,7 @@ const AdminProfileEdit = () => {
     setMessage({ type: "", text: "" });
 
     try {
+<<<<<<< HEAD
       const updatePayload = { admin_name: admin.admin_name };
 
       if (admin.admin_password) {
@@ -126,6 +127,14 @@ const AdminProfileEdit = () => {
       if (dbError) throw dbError;
 
       setAdmin(prev => ({ ...prev, admin_password: "", confirm_password: "" }));
+=======
+      const { error: dbError } = await supabase
+        .from("tbl_admin")
+        .update({ admin_name: admin.admin_name })
+        .eq("admin_email", admin.admin_email);
+
+      if (dbError) throw dbError;
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
       setMessage({ type: "success", text: "Profile updated successfully!" });
     } catch (error) {
       setMessage({ type: "error", text: error.message });
@@ -192,10 +201,13 @@ const AdminProfileEdit = () => {
         <form onSubmit={handleUpdate} className={style.formCard}>
           <TextField fullWidth label="Full Name" name="admin_name" value={admin.admin_name} onChange={handleChange} required margin="normal" />
           <TextField fullWidth label="Email" name="admin_email" value={admin.admin_email} disabled margin="normal" />
+<<<<<<< HEAD
           <TextField fullWidth label="New Password (optional)" name="admin_password" type="password" value={admin.admin_password} onChange={handleChange} placeholder="Leave blank to keep current" margin="normal" />
           {admin.admin_password ? (
             <TextField fullWidth label="Confirm New Password" name="confirm_password" type="password" value={admin.confirm_password} onChange={handleChange} required margin="normal" />
           ) : null}
+=======
+>>>>>>> ce651ff24ddcb1014f389686533b192c9e380b25
           <Button type="submit" variant="contained" fullWidth disabled={loading.form} className={style.primaryButton} sx={{ mt: 3 }}>
             {loading.form ? <CircularProgress size={22} /> : "Save Changes"}
           </Button>
